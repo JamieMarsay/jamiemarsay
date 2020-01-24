@@ -1,9 +1,13 @@
+@font-face {
+  font-family: "Arimo";
+  src: local("Arimo"), url(../src/assets/Arimo-Regular.ttf) format("truetype");
+}
+
 // Our styles
 @import "./styles/Reset.scss";
 @import "./styles/App.scss";
 @import "./styles/Animations.scss";
 @import "./styles/Flex.scss";
 @import "./styles/Spacing.scss";
-
-// 3rd Party
-@import "~flexboxgrid/css/flexboxgrid.min.css";
+@import "./styles/Sizing.scss";
+@import "./styles/Utils.scss";

@@ -6,16 +6,20 @@ import clsx from "clsx";
 const Typography: FunctionComponent<ITypography> = ({
   variant = "p",
   capitalise,
+  className,
   text,
-  bold
+  bold,
+  size
 }) => {
   const Tag = variant;
 
   return (
     <Tag
       className={clsx({
+        "text--capitalise": capitalise,
+        [`${className}`]: className,
+        [`text--${size}`]: size,
         "text--bold": bold,
-        "text--capitalise": capitalise
       })}
     >
       {text}

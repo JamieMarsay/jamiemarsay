@@ -1,18 +1,14 @@
-import React, { FunctionComponent, Fragment } from "react";
-import Typography from "@Components/Typography/Typography";
-import GridV2 from "@Components/Grid/Grid";
+import React, { FunctionComponent } from "react";
+import Menu from "@Components/Menu/Menu";
 import { IHeading } from "./IHeading";
+import "./Heading.scss";
 
-const Heading: FunctionComponent<IHeading> = ({ title, controls }) => (
-  <GridV2
-    cols={2}
-    children={
-      <Fragment>
-        <Typography text={title} variant="h1" />
-        {controls ? <span className="flex flex--end">{controls}</span> : null}
-      </Fragment>
-    }
-  />
-);
+const Heading: FunctionComponent<IHeading> = ({ title }) => {
+  return (
+    <header className="heading m--bottom-xxl flex flex--between flex--v-centre">
+      <Menu title={title} items={["About", "Work", "Contact"]} />
+    </header>
+  );
+};
 
 export default Heading;

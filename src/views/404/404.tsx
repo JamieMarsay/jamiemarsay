@@ -1,21 +1,14 @@
-import React, { Fragment } from "react";
-import Heading from "@Components/Heading/Heading";
-import Paper from "@Components/Paper/Paper";
-import { Link } from "react-router-dom";
+import React from "react";
+import Block from "@Components/Block/Block";
 
 const FourOhFour = () => (
-  <section>
-    <Heading
-      title="404"
-      controls={
-        <Fragment>
-          <Link to="/" className="m--right-md">
-            Return Home
-          </Link>
-        </Fragment>
-      }
+  <section className="fade--in">
+    <Block
+      text="Go back home and try again..."
+      title="404 - It broke! 😔"
+      ctaText="To safety"
+      href="/"
     />
-    <Paper title="There's not much here...">404</Paper>
   </section>
 );
 

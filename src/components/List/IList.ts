@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface IPaper {
+export interface IListBase {
   children: ReactNode;
-  title: string;
+  className?: string;
 }

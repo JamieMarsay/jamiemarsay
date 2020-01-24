@@ -6,4 +6,32 @@
   &--capitalise {
     text-transform: capitalize;
   }
+
+  &--centre {
+    text-align: center;
+  }
+
+  &--xxxl {
+    font-size: 48px;
+  }
+
+  &--xxl {
+    font-size: 40px;
+  }
+
+  &--xl {
+    font-size: 32px;
+  }
+
+  &--l {
+    font-size: 24px;
+  }
+
+  &--md {
+    font-size: 16px;
+  }
+
+  &--s {
+    font-size: 8px;
+  }
 }

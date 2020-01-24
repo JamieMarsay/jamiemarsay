@@ -1,0 +1,22 @@
+@import "../../styles/Mixins.scss";
+
+.block {
+  display: flex;
+  height: 65vh;
+  margin: 3rem auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+
+  @include lg {
+    width: 50%;
+    margin: 6rem auto;
+    padding: 2rem;
+  }
+
+  &:nth-child(2n) {
+    border-radius: 10px;
+    color: #fff;
+    background-color: #000;
+  }
+}

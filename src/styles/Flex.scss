@@ -5,11 +5,19 @@
     justify-content: center;
   }
 
+  &--v-centre {
+    align-items: center;
+  }
+
   &--stack {
     flex-direction: column;
   }
 
   &--end {
     justify-content: flex-end;
+  }
+
+  &--between {
+    justify-content: space-between;
   }
 }

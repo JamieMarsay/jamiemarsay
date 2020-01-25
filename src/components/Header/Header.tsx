@@ -10,7 +10,7 @@ const Header: FunctionComponent<IHeader> = ({ title }) => {
   const [open, toggleOpen] = useState(false);
 
   return (
-    <header className="header animate--slide-down">
+    <header className="header">
       <div className="header__inner flex flex--v-centre flex--between">
         <Anchor
           children={<Typography text={title} variant="h2" />}

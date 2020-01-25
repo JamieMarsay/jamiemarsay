@@ -6,7 +6,7 @@ import Icon from "@Components/Icon/Icon";
 import "./Nav.scss";
 
 const Nav: FunctionComponent = () => (
-  <nav className="nav animate--slide-left">
+  <nav className="nav">
     <List>
       {navLinks.map((link: ILink) => (
         <ListItem key={link.url}>

@@ -3,22 +3,6 @@
     position: relative;
     animation: bounce 1s 0.25s infinite ease-in-out;
   }
-
-  &--fade {
-    &-in {
-      animation: fadeIn 0.5s 0s linear;
-    }
-  }
-
-  &--slide {
-    &-down {
-      animation: slideDown 0.5s 0s linear, fadeIn 0.3s linear;
-    }
-
-    &-left {
-      animation: slideLeft 0.5s 0s linear, fadeIn 0.3s linear;
-    }
-  }
 }
 
 @keyframes bounce {
@@ -30,34 +14,5 @@
   }
   100% {
     bottom: 0;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    top: -10vh;
-  }
-
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes slideLeft {
-  0% {
-    right: -10vw;
-  }
-
-  100% {
-    right: 0;
   }
 }

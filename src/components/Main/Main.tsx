@@ -9,7 +9,7 @@ const Main: FunctionComponent<IMain> = ({ Current }) => (
     <Header title="Jamie Marsay" />
     <Nav />
     <main className="main">
-      <div className="main__inner pos--rel">
+      <div className="main__inner animate--slide-down pos--rel">
         <Current />
       </div>
     </main>

@@ -1,10 +1,5 @@
 import React, { FunctionComponent } from "react";
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Main from "@Components/Main/Main";
 import FourOhFour from "@Views/404/404";
 import Home from "@Views/Home/Home";
@@ -12,7 +7,7 @@ import Home from "@Views/Home/Home";
 const routes = [
   {
     view: Home,
-    path: "/home"
+    path: "/"
   },
   {
     view: FourOhFour,
@@ -34,10 +29,6 @@ const App: FunctionComponent = () => {
           />
         ))}
       </Switch>
-
-      <Route path="/" exact>
-        <Redirect to="/home" />
-      </Route>
     </Router>
   );
 };

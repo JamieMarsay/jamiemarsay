@@ -8,8 +8,8 @@ const Main: FunctionComponent<IMain> = ({ Current }) => (
   <Fragment>
     <Header title="Jamie Marsay" />
     <Nav />
-    <main className="main animate--fade-in">
-      <div className="main__inner fade--in pos--rel">
+    <main className="main">
+      <div className="main__inner pos--rel">
         <Current />
       </div>
     </main>

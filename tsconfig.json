@@ -12,9 +12,9 @@
     "jsx": "react",
     "paths": {
       "@Components/*": ["components/*"],
-      "@Context/*": ["context/*"],
       "@Assets/*": ["assets/*"],
-      "@Views/*": ["views/*"]
+      "@Views/*": ["views/*"],
+      "@Data/*": ["data/*"]
     }
   }
 }

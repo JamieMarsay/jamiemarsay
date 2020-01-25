@@ -14,9 +14,9 @@ module.exports = (env, options) => {
       extensions: [".tsx", ".ts", ".js"],
       alias: {
         ["@Components"]: path.resolve(__dirname, "./src/components/"),
-        ["@Context"]: path.resolve(__dirname, "./src/context/"),
         ["@Assets"]: path.resolve(__dirname, "./src/assets/"),
-        ["@Views"]: path.resolve(__dirname, "./src/views/")
+        ["@Views"]: path.resolve(__dirname, "./src/views/"),
+        ["@Data"]: path.resolve(__dirname, "./src/data/")
       }
     },
     devServer: {
@@ -27,7 +27,7 @@ module.exports = (env, options) => {
       new HTMLTemplate({
         favicon: path.resolve(__dirname, "src/favicon.ico"),
         template: path.resolve(__dirname, "src/index.html"),
-        title: "Sandbox",
+        title: "Jamie Marsay | Web Developer Leeds",
         filename: "index.html"
       }),
       new MiniCssExtract({
@@ -62,7 +62,7 @@ module.exports = (env, options) => {
           ]
         },
         {
-          test: /\.(png|svg|jpg|gif|ttf)$/,
+          test: /\.(png|svg|jpg|jpeg|gif|ttf)$/,
           use: ["file-loader"]
         }
       ]

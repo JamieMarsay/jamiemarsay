@@ -5,6 +5,7 @@ export interface IAnchor {
   className?: string;
   ariaLabel: string;
   target?: string;
+  alt?: boolean;
   href: string;
   rel?: string;
 }

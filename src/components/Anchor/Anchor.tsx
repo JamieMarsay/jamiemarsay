@@ -9,11 +9,13 @@ const Anchor: FunctionComponent<IAnchor> = ({
   children,
   target,
   href,
+  alt,
   rel
 }) => (
   <a
     className={clsx("anchor", {
-      [`${className}`]: className
+      [`${className}`]: className,
+      "anchor--alt": alt
     })}
     aria-label={ariaLabel}
     target={target}

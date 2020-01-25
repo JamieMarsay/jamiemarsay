@@ -1,12 +1,14 @@
 import React, { FunctionComponent, Fragment } from "react";
-import Heading from "@Components/Heading/Heading";
+import Header from "@Components/Header/Header";
+import Nav from "@Components/Nav/Nav";
 import { IMain } from "./IMain";
 import "./Main.scss";
 
 const Main: FunctionComponent<IMain> = ({ Current }) => (
   <Fragment>
-    <Heading title="Jamie Marsay" />
-    <main className="main">
+    <Header title="Jamie Marsay" />
+    <Nav />
+    <main className="main animate--fade-in">
       <div className="main__inner fade--in pos--rel">
         <Current />
       </div>

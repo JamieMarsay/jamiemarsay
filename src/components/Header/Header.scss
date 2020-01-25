@@ -1,0 +1,23 @@
+@import "../../styles/Mixins.scss";
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: -1px 3px 4px 0 rgba(0, 0, 0, 0.1);
+
+  @include lg {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner {
+    padding: 1rem 2rem;
+
+    @include lg {
+      width: 100%;
+      padding: 1rem 8rem;
+    }
+  }
+}

@@ -3,12 +3,19 @@ import { IIcon } from "./IIcon";
 import clsx from "clsx";
 import "./Icon.scss";
 
-const Icon: FunctionComponent<IIcon> = ({ src, alt, action, className }) => {
+const Icon: FunctionComponent<IIcon> = ({
+  className,
+  action,
+  large,
+  src,
+  alt
+}) => {
   return (
     <img
       onClick={action ? () => action() : () => null}
       className={clsx("icon", {
-        [`${className}`]: className
+        [`${className}`]: className,
+        "icon--large": large
       })}
       src={src}
       alt={alt}

@@ -1,7 +1,7 @@
 export interface IBlock {
+  paragraphs?: string[];
   ctaText?: string;
   title: string;
-  text?: string;
   href?: string;
   ctas?: ICta[];
 }

@@ -1,13 +1,17 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import Block from "@Components/Block/Block";
 
-const FourOhFour = () => (
+const FourOhFour: FunctionComponent = () => (
   <section>
     <Block
-      text="Go back home and try again..."
+      paragraphs={["Go back home and try again..."]}
       title="404 - It broke! 😔"
-      ctaText="To safety"
-      href="/"
+      ctas={[
+        {
+          text: "Take me home",
+          href: "/"
+        }
+      ]}
     />
   </section>
 );

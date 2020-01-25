@@ -7,8 +7,8 @@ const Home: FunctionComponent = () => (
   <section>
     {homeBlocks.map((block: IBlock) => (
       <Block
+        paragraphs={block.paragraphs}
         title={block.title}
-        text={block.text}
         ctas={block.ctas}
         key={block.title}
       />

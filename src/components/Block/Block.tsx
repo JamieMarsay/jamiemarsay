@@ -4,7 +4,7 @@ import Anchor from "@Components/Anchor/Anchor";
 import { IBlock } from "./IBlock";
 import "./Block.scss";
 
-const Block: FunctionComponent<IBlock> = ({ title, text, ctas }) => (
+const Block: FunctionComponent<IBlock> = ({ title, paragraphs, ctas }) => (
   <div className="block pos--rel">
     <Typography
       className="block__title m--bottom-md"
@@ -13,7 +13,15 @@ const Block: FunctionComponent<IBlock> = ({ title, text, ctas }) => (
       size="xxl"
     />
 
-    {text ? <Typography text={text} className="m--bottom-md" /> : null}
+    {paragraphs
+      ? paragraphs.map((paragraph: string) => (
+          <Typography
+            className="m--bottom-md"
+            text={paragraph}
+            key={paragraph}
+          />
+        ))
+      : null}
     {ctas && ctas.length
       ? ctas.map(cta => (
           <Anchor

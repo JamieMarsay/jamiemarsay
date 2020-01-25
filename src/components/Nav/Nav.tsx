@@ -14,8 +14,6 @@ const Nav: FunctionComponent = () => (
             children={<Icon src={link.icon} alt={link.alt} />}
             ariaLabel={link.alt}
             href={link.url}
-            target="_blank"
-            rel="noopener"
             alt
           />
         </ListItem>

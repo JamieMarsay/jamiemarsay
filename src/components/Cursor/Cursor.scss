@@ -1,0 +1,37 @@
+@import "../../styles/Mixins.scss";
+
+.cursor {
+  display: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  pointer-events: none;
+
+  @include lg {
+    display: block;
+  }
+
+  &__outer {
+    padding: 2rem;
+    background-color: transparent;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    mix-blend-mode: difference;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 999;
+  }
+
+  &__inner {
+    padding: 0.35rem;
+    background-color: #fff;
+    z-index: 999;
+  }
+
+  &--hover {
+    padding: 1rem;
+    background-color: #fff;
+
+    &-inner {
+      display: none;
+    }
+  }
+}

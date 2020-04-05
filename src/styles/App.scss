@@ -1,3 +1,11 @@
+@import "./Mixins.scss";
+
+* {
+  cursor: none;
+}
+
 body {
-  font-family: "Arimo", sans-serif;
+  font-family: "Primary";
+  box-sizing: border-box;
+  height: 100vh;
 }

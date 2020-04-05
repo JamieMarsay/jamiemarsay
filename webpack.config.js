@@ -14,14 +14,17 @@ module.exports = (env, options) => {
       extensions: [".tsx", ".ts", ".js"],
       alias: {
         ["@Components"]: path.resolve(__dirname, "./src/components/"),
+        ["@Images"]: path.resolve(__dirname, "./src/assets/images/"),
         ["@Assets"]: path.resolve(__dirname, "./src/assets/"),
         ["@Views"]: path.resolve(__dirname, "./src/views/"),
+        ["@Hooks"]: path.resolve(__dirname, "./src/hooks"),
         ["@Data"]: path.resolve(__dirname, "./src/data/")
       }
     },
     devServer: {
       contentBase: path.resolve(__dirname, "dist"),
-      historyApiFallback: true
+      historyApiFallback: true,
+      host: "192.168.0.36"
     },
     plugins: [
       new HTMLTemplate({
@@ -45,6 +48,10 @@ module.exports = (env, options) => {
           use: "ts-loader"
         },
         {
+          test: /\.svg$/,
+          loader: "svg-inline-loader"
+        },
+        {
           test: /\.(s*)css$/,
           use: [
             {
@@ -62,7 +69,7 @@ module.exports = (env, options) => {
           ]
         },
         {
-          test: /\.(png|svg|jpg|jpeg|gif|ttf)$/,
+          test: /\.(png|jpg|jpeg|webp|gif|ttf)$/,
           use: ["file-loader"]
         }
       ]

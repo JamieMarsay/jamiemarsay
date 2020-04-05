@@ -1,23 +1,14 @@
 @import "../../styles/Mixins.scss";
 
 .block {
-  display: flex;
-  height: 65vh;
-  margin: 3rem auto;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
-  // opacity: 0;
+  height: 100vh;
 
-  @include lg {
-    width: 50%;
-    margin: 6rem auto;
-    padding: 2rem;
-  }
+  &__inner {
+    position: relative;
 
-  &:nth-child(2n) {
-    border-radius: 10px;
-    color: #fff;
-    background-color: #000;
+    @include lg {
+      width: 50%;
+      margin: 0 auto;
+    }
   }
 }

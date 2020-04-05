@@ -1,14 +1,10 @@
 @import "../../styles/Mixins.scss";
 
 .icon {
-  width: 24px;
-  padding: 0.5rem;
+  display: inline-grid;
+  width: 18px;
 
-  &--large {
-    width: 32px;
-  }
-
-  &--faint {
-    opacity: 0.5;
+  & svg {
+    fill: #fff;
   }
 }

@@ -1,24 +1,32 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
+import Typography from "@Components/Typography/Typography";
 import { List, ListItem } from "@Components/List/List";
-import { navLinks, ILink } from "@Data/navLinks";
-import Anchor from "@Components/Anchor/Anchor";
-import Icon from "@Components/Icon/Icon";
+import { ExternalLink } from "@Components/Link/Link";
+import { navLinks } from "@Data/navLinks";
 import "./Nav.scss";
 
-const Nav: FunctionComponent = () => (
+const Nav = () => (
   <nav className="nav">
-    <List>
-      {navLinks.map((link: ILink) => (
-        <ListItem key={link.url}>
-          <Anchor
-            children={<Icon src={link.icon} alt={link.alt} />}
-            ariaLabel={link.alt}
-            href={link.url}
-            alt
-          />
-        </ListItem>
+    <List
+      className="flex"
+      children={navLinks.map(({ text, url }, index) => (
+        <ListItem
+          className={`m--right-lg animate__fade--up animate__delay--${
+            index + 3
+          }`}
+          key={text}
+          children={
+            <ExternalLink
+              children={
+                <Typography className="interactable" text={text} size="md" />
+              }
+              ariaLabel={text}
+              to={url}
+            />
+          }
+        />
       ))}
-    </List>
+    />
   </nav>
 );
 

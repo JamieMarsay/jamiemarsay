@@ -1,19 +1,5 @@
-import React, { FunctionComponent } from "react";
-import Block from "@Components/Block/Block";
+import React, { FunctionComponent, Fragment } from "react";
 
-const FourOhFour: FunctionComponent = () => (
-  <section>
-    <Block
-      paragraphs={["Go back home and try again..."]}
-      title="404 - It broke! 😔"
-      ctas={[
-        {
-          text: "Take me home",
-          href: "/"
-        }
-      ]}
-    />
-  </section>
-);
+const FourOhFour: FunctionComponent = () => <Fragment></Fragment>;
 
 export default FourOhFour;

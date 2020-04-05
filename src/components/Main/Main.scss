@@ -1,20 +1,7 @@
 @import "../../styles/Mixins.scss";
 
 .main {
-  display: flex;
-  max-width: 1440px;
-  margin: 0 auto;
-
-  @include lg {
-    padding: 0 4rem;
-  }
-
-  &__inner {
-    width: 100%;
-    padding: 1rem;
-
-    @include lg {
-      padding: 2rem 4rem;
-    }
-  }
+  padding: 0 1rem;
+  background-color: #000;
+  color: #fff;
 }

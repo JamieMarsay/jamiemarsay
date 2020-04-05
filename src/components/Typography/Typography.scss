@@ -1,37 +1,49 @@
+@import "../../styles/Mixins.scss";
+
 .text {
+  color: inherit;
+
   &--bold {
-    font-weight: bold;
+    font-family: "Open Sans Bold";
   }
 
   &--capitalise {
     text-transform: capitalize;
   }
 
+  &--upper {
+    text-transform: uppercase;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
   &--centre {
     text-align: center;
   }
 
-  &--xxxl {
-    font-size: 48px;
+  &--right {
+    text-align: right;
   }
 
-  &--xxl {
-    font-size: 40px;
-  }
-
-  &--xl {
-    font-size: 32px;
-  }
-
-  &--l {
-    font-size: 24px;
+  &--spacing {
+    letter-spacing: 5px;
   }
 
   &--md {
     font-size: 16px;
+
+    @include lg {
+      font-size: 24px;
+    }
   }
 
-  &--s {
-    font-size: 8px;
+  &--lg {
+    font-size: 48px;
+
+    @include lg {
+      font-size: 64px;
+    }
   }
 }

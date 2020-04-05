@@ -1,0 +1,13 @@
+.button {
+  position: relative;
+  max-width: max-content;
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 40px;
+
+  &:focus {
+    outline: none;
+  }
+}

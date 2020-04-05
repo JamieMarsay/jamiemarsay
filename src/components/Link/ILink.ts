@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
-export interface IAnchor {
+export interface ILink {
   children: ReactNode;
+  internal?: boolean;
   className?: string;
   ariaLabel: string;
   target?: string;
-  alt?: boolean;
-  href: string;
   rel?: string;
+  to: string;
 }

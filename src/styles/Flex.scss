@@ -1,12 +1,24 @@
 .flex {
   display: flex;
 
+  &--1 {
+    flex: 1;
+  }
+
+  &--half {
+    flex: 0.5;
+  }
+
   &--centre {
     justify-content: center;
   }
 
   &--v-centre {
     align-items: center;
+  }
+
+  &--v-end {
+    align-items: flex-end;
   }
 
   &--stack {

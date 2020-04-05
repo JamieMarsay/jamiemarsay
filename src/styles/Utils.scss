@@ -3,3 +3,9 @@
     position: relative;
   }
 }
+
+.opacity {
+  &--none {
+    opacity: 0;
+  }
+}

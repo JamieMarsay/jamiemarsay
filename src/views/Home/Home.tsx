@@ -1,19 +1,22 @@
-import React, { FunctionComponent } from "react";
-import { IBlock } from "@Components/Block/IBlock";
-import { homeBlocks } from "@Data/homeBlocks";
+import React, { FunctionComponent, Fragment } from "react";
 import Block from "@Components/Block/Block";
 
-const Home: FunctionComponent = () => (
-  <section>
-    {homeBlocks.map((block: IBlock) => (
+const paragraphs = [
+  "I'm a front-end web developer specialising in ReactJs & TypeScript. Possessing a passion for crafting clean, performant experiences, I deliver quality work and focus on quality over quantity every time.",
+  "I am currently one of two directors over at Nest Agency, a brand new, tech-first agency specialising in building slick digital experiences.",
+];
+
+const Home: FunctionComponent = () => {
+  return (
+    <Fragment>
       <Block
-        paragraphs={block.paragraphs}
-        title={block.title}
-        ctas={block.ctas}
-        key={block.title}
+        ctaUrl="mailto:jamie@nestagency.io"
+        paragraphs={paragraphs}
+        ctaText="Get in touch"
+        title="Hi, I'm Jamie"
       />
-    ))}
-  </section>
-);
+    </Fragment>
+  );
+};
 
 export default Home;

@@ -1,0 +1,17 @@
+$borderWidth: 5px;
+$borderColour: #fff;
+
+.border {
+  &--top {
+    border-top: $borderWidth solid $borderColour;
+  }
+  &--right {
+    border-right: $borderWidth solid $borderColour;
+  }
+  &--bottom {
+    border-bottom: $borderWidth solid $borderColour;
+  }
+  &--left {
+    border-left: $borderWidth solid $borderColour;
+  }
+}

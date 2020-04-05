@@ -1,13 +1,15 @@
 @font-face {
-  font-family: "Arimo";
-  src: local("Arimo"), url(../src/assets/Arimo-Regular.ttf) format("truetype");
+  font-family: "Primary";
+  src: url("../src/assets/fonts/PTSerif-Regular.ttf");
 }
 
 // Our styles
-@import "./styles/Reset.scss";
 @import "./styles/App.scss";
+@import "./styles/Reset.scss";
+@import "./styles/Border.scss";
 @import "./styles/Animations.scss";
 @import "./styles/Flex.scss";
+@import "./styles/Mixins.scss";
 @import "./styles/Spacing.scss";
 @import "./styles/Sizing.scss";
 @import "./styles/Utils.scss";

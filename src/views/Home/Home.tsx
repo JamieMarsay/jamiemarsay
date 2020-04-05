@@ -9,12 +9,7 @@ const paragraphs = [
 const Home: FunctionComponent = () => {
   return (
     <Fragment>
-      <Block
-        ctaUrl="mailto:jamie@nestagency.io"
-        paragraphs={paragraphs}
-        ctaText="Get in touch"
-        title="Hi, I'm Jamie"
-      />
+      <Block paragraphs={paragraphs} title="Hi, I'm Jamie" />
     </Fragment>
   );
 };
